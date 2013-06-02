@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+		<PreferenceCategory android:title="@string/SettingsTitle">
+			<CheckBoxPreference
+					android:title="@string/SettingsFullscreen"
+					android:defaultValue="false"
+					android:summary="@string/SettingsFullscreenSummary"
+					android:key="cbFullscreen" />
+			<ListPreference
+						android:title="@string/SettingsSortBy"
+						android:summary="@string/SettingsSortBySummary"
+						android:key="listSort"
+						android:defaultValue="0"
+						android:entries="@array/listArraySort"
+						android:entryValues="@array/listValuesSort"/>
+		</PreferenceCategory>
+</PreferenceScreen>

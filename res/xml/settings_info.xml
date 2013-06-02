@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+		<PreferenceCategory android:title="@string/GeneralInfoTitle">
+			<Preference android:title="@string/SettingsVersionNumber"
+						android:defaultValue=""
+						android:editable="false"
+						android:key="lblVersionNumber"/>
+		</PreferenceCategory>
+</PreferenceScreen>

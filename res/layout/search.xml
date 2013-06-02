@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		    <RadioGroup
+		        android:id="@+id/rgMode"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="8dp"
+		        android:layout_marginTop="8dp"
+		        android:orientation="horizontal">
+		
+		        <RadioButton
+		            android:id="@+id/rbAll"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:checked="true"
+		            android:text="@string/RadioButtonAll"
+		            android:textSize="20sp" />
+		
+		        <RadioButton
+		            android:id="@+id/rbTerm"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/RadioButtonTerm"
+		            android:textSize="20sp" />
+		
+		        <RadioButton
+		            android:id="@+id/rbDescription"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/RadioButtonDescription"
+		            android:textSize="20sp" />
+		    </RadioGroup>
+		
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+		    
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			   
+					    <EditText
+					        android:id="@+id/editText1"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:layout_toLeftOf="@+id/btnSearch"
+					        android:hint="@string/InputHint"
+					        android:inputType="textAutoCorrect|textAutoComplete"
+					        android:textSize="24sp" />
+					
+					    <Button
+					        android:id="@+id/btnSearch"
+					        android:layout_width="60dp"
+							android:layout_height="50dp"
+							android:layout_alignParentRight="true"
+							android:layout_marginRight="15dp"
+					        android:text="@string/ButtonSearch"/>
+			    </RelativeLayout>
+			 </LinearLayout>
+		</LinearLayout>
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="24sp" />
+		</LinearLayout>
+	</LinearLayout>	
+</RelativeLayout>
